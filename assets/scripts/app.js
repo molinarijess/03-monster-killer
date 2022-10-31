@@ -150,9 +150,12 @@ function printLogHandler() {
     console.log("-----");
   }
 
-  let j = 3;
+  let j = 0;
   do {
-    console.log(j);
+    console.log("Outer:", j);
+    for (let k = 0; k < 5; k++) {
+      console.log("Inner:", k);
+    }
     j++;
   } while (j < 3);
 
